@@ -4,6 +4,44 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.circle {
+    background-color: beige;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: none;    
+}
+
+.circle_1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%; -50%);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    border-top: 10px solid #ccc;
+    animation: animate 2s infinite linear;
+    
+}
+
+@keyframes animate {
+    0% {
+        transform:  translate(-20%, 50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-20%, 50%) rotate(360deg);
+    }
+}
+
 div {
     display: block;
     margin: 0;
@@ -22,12 +60,21 @@ nav {
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: beginning 2s ease;
+    -o-animation: beginning 2s ease;
+    animation: beginning 2s ease;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .menu {
     float: left;
     padding-left: 432px;
 }
+
 
 .menu li {
     float: left;
@@ -36,13 +83,96 @@ nav {
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 1.5s ease forwards;
+    -o-animation: topshift 1.5s ease forwards;
+    animation: topshift 1.5s ease forwards;
+    opacity: 0;
+}
+
+.menu li a{
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.1em;
+    width: 0%;
+    background-color: #e88604; 
+    transition: all ease-in-out 0.2s;
+}
+
+.menu li a:hover::after{
+    width: 100%;
+}
+
+.menu li a:hover{
+    color: #e88604;
+}
+
+.menu li a:active{
+    transform: scale(1.1);
 }
 
 .menu ul {
     list-style-type: none;
 }
 
-   
+@keyframes beginning{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from {
+       opacity: 0; 
+        margin-top: -80px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes titlemove{
+    from {
+        opacity: 0;
+        margin-left: -500px;
+        
+    }
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+
+ .menu li:nth-child(2){
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3){
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4){
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5){
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6){
+    animation-delay: 2s;
+}
 
 .title_container {
     position: relative;
@@ -53,8 +183,23 @@ nav {
     top: 50%;
     z-index: 1;
     transform: translate3d(10%, -50%, 0);
-    
-    
+    -webkit-animation: titlemove 1s ease;
+    -o-animation: titlemove 1s ease;
+    animation: titlemove 1s ease;
+}
+
+.title_container input {
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.title_container input:hover {
+    background: #344051;
+    color:#fff;    
+}
+
+.title_container input:active{
+    transform: scale(1.1);
 }
 
 .title_container h1 {
@@ -124,10 +269,20 @@ nav {
     border: 2px solid #727483;
     height: 35px;
     width: 160px;
+    transform: translate3d(10%, -50%, 0);
     margin: 0 auto;
     border-radius: 9%;
     margin-bottom: 100px;
     text-align: center;
+    transition: all 0.2s;
+    transform: scale(1);
+    transform: translateY(10%)
+}
+
+
+
+.loadresume:active{
+    transform: scale(1.1);
 }
 
 .file {
@@ -136,6 +291,7 @@ nav {
     color: #7b7c89;
     line-height: 32px;
 }
+
 
 .card-photo {
     margin-top: 63px;
@@ -190,6 +346,23 @@ nav {
 
 .amistake {
     margin-top: 30px;
+    background-color: #00b6af;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.amistake:hover{
+    background: #344051; /*чуть чуть другой цвет взять*/
+}
+
+.amistake:active{
+    
+    transform: scale(1.1);
 }
 
 .mainzagolovok {
@@ -215,15 +388,9 @@ nav {
 }
 
 .cases a {
-    background-color: #00b6af;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    height: 45px;
-    width: 200px;
-    padding: 15px 43px 15px 43px;
-    border-radius: 8%;
-    margin-top: 20px;
 }
 
 .clases__a {
@@ -231,9 +398,6 @@ nav {
     margin-top: 20px;
     margin-left: -150px;
 }
-
-
-
 
 .cost {
     width: 900px;
@@ -278,6 +442,7 @@ nav {
     padding-bottom: 100px;
     background: url(../img/dp.jpg) center/cover no-repeat;
     text-align: center;
+    background-attachment: fixed;
 }
 
 .zagolovok {
@@ -290,6 +455,7 @@ nav {
 .staticc {
     display: flex;
     justify-content: center;
+    margin-left: 180px;
 }
 
 .static1 p {
@@ -327,7 +493,6 @@ footer {
     height: 100%;
     width: 100%;
     background height: 100%;
-/*    проблема в тот что при уменьшении масштаба нижние значки перекрываются*/
 }
 
 footer h2 {
@@ -351,7 +516,6 @@ footer h3 {
 .kontact {
     text-decoration: none;
     color: #fff;
-/*    поставил цвет потому что без него ссылки другого цвета, хотя в footere color #fff*/
 }
 
 .kontack1 {
@@ -365,7 +529,19 @@ footer h3 {
     border-radius: 10%;
     background: none;
     color: #fff;
+    transition: all 0.2s;
+    transform: scale(1);
 }
+
+.boxload:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.boxload:active{
+    transform: scale(1.1);
+}
+
 
 .inputall {
     display: flex;
@@ -381,7 +557,12 @@ footer h3 {
     height: 35px;
 }
 
+
+
 .input__type1 {
+	overflow: auto;
+	resize: none;
+	border-radius: 8px 0 0 0;
     opacity: 0.8;
     width: 730px;
     resize:  none;
@@ -413,3 +594,8 @@ iframe {
     margin: 0;
     padding: 0;
 }
+
+
+
+
+
