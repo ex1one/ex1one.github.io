@@ -1,0 +1,304 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Open Sans' sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1a2e43;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+header {
+    padding: 20px 0 10px 0;
+    align-items: center;
+    background: #2a3d50;
+    color: #fff;
+    
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    font-size: 17px;
+    margin-right: 40px;
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    background: url(../img/fon.jpg) no-repeat center/cover;
+    height: 100vh;
+    color: #76828e;
+}
+
+.row_container {
+    margin-left: -20px;
+    padding-top: 380px;
+}
+
+.col-6 {
+    text-align: center;
+}
+.title {
+    color: #223549;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.mt-3 {
+    font-size: 18px;
+}
+
+.btn-2{
+    text-decoration: none;
+    color: #6f7180;
+    border: 1px solid #6f7180;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+}
+
+.p-style {
+    margin-top: -80px;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid #697784;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.btn {
+    color: #697784;
+}
+
+.btn:hover {
+    background: #223549;
+    color: #fff;
+}
+
+.info_about_me {
+    padding-top: 108px;
+    padding-bottom: 98px;
+    
+}
+
+.benefits_title {
+    position: relative;
+}
+
+.benefits_title:after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: #eb7800;
+}
+
+.text{
+    color: #38475a;
+}
+
+.text_2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.img_boy {
+    height: 200px;
+    width: 200px;
+}
+
+.img_skills {
+    width: 65px;
+    height: 50px;
+}
+
+.skills_container {
+    background: url(../img/kart%20fon.jpg) no-repeat center/cover;
+    height: 100%;
+    padding-top: 105px;
+    padding-bottom: 90px;
+}
+
+.skills {
+    margin-top: 100px;
+}
+
+.title_header {
+    color: #e89251;
+    margin-top: 35px;
+    font-size: 19px;
+}
+
+.cases {
+    padding-top: 103px;
+    padding-bottom: 32px;
+}
+
+.btn_1 {
+    text-decoration: none;
+    color: #fff;
+    background: #00b6af;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 45px;
+    padding-top: 7px;
+}
+
+.calculator {
+    padding-top: 150px;
+}
+
+.calculator p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #102031;
+}
+
+.main_calculator {
+    margin-left: 80px;
+}
+
+.calculator select {
+    width: 90%;
+    margin-left: 10px;
+    padding: 20px;
+    background: #eeeeee;
+    border: none;
+}
+
+.box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+    box-shadow: 0 0 4px #000;
+}
+
+.block_1 {
+    width: 100%;
+}
+
+.block p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.block {
+    width: 100%;
+}
+
+.statistics {
+    padding-top: 105px;
+    padding-bottom: 100px;
+    background: url(../img/dp.jpg) no-repeat center/cover;
+}
+
+.statistics_info h2 {
+    font-size: 35px;
+}
+
+.statistics_info p {
+    color: #293b4f;
+    font-weight: 500;
+}
+
+.img_statick {
+    width: 55px;
+    height: 50px;
+}
+
+.statistics_info {
+    margin-top: 90px;
+}
+
+.reviews {
+    padding-top: 105px;
+    padding-bottom: 90px;
+}
+
+.face{
+    margin-top: 50px;
+}
+
+.title_end {
+    color: #fff;
+}
+
+.footer {
+    color: #fff;
+    background: url(../img/HBpQzLsmzCY.jpg) no-repeat center/cover;
+    height: 100%;
+    padding-top: 105px;
+    padding-bottom: 70px; 
+}
+
+.kontact {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+.title_sms {
+    color: #fff;
+    font-size: 25px;
+}
+
+.input-type {
+    opacity: 0.8;
+    height: 34px;
+    width: 100%;
+}
+
+.img_row {
+    margin-top: 80px;
+}
+
+.input-text-area {
+    opacity: 0.8;
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    max-height: 200px;
+}
+
+.input-submit{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background: none;
+    padding: 10px 15px 10px 15px;
+}
+
+.row_map {
+    height: 450px;
+    width: 100%;
+}
+
+.footer_text {
+    background: #2c3e51;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0 auto;
+}
