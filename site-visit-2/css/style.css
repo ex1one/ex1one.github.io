@@ -1,0 +1,548 @@
+/* start navigation */
+
+    .navbar_fixed{
+        position: fixed;
+        width: 100%;
+        left: 0; right: 0;
+        background: #fff;
+        box-shadow: 0 0 2px;
+        z-index: 1000;
+        transition: background 0.2s linear;
+    }
+
+    .navbar-brand-logo{
+        padding-top: 1.3125rem;
+        padding-left: 1.3125rem;
+    }
+
+    nav{
+        background: none;
+    }
+
+    .nav-link{
+        font-family: "Roboto", cursive;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 1.7rem;
+        color: #000; 
+    }
+
+    .nav-item{
+        padding-right: 2rem;
+        list-style: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+    }
+
+    .active{
+        color: rgb(101,84,229)!important;
+    }
+
+    .nav-link:hover{
+        color: rgb(101,84,229)!important;  
+    }
+
+/* end navigation */
+
+/* Start banner */
+
+    .site-main{
+        height: 100vh;
+    }
+
+    .site-banner{
+        background: url(../img/home-banner.jpg) no-repeat 0% 50%;  
+    }
+
+    .site-title h3{
+        padding-top: 35%;
+        font-weight: 500;
+        font-size: 3rem;
+    }
+
+    .site-title h3::after{
+        content: "";
+        height: 2px;
+        width: 18vw;
+        background: black;
+        display: inline-block;
+        margin-left: 5%;
+        transform: translateY(-10px);
+    }
+
+    .site-title h1{
+        font-size: 5rem;
+    }
+
+    .site-title h4{
+        font-size: 1.5rem;
+    }
+
+    .banner-image{
+        padding: 7rem 0;
+    }
+
+    .title-text{
+        font: normal bold 50px/72px;
+    }
+
+    /* Start buttons */
+
+    .two-buttons{
+        display: inline-block;
+        position: relative;
+        border: 3px solid rgb(101,84,229);
+        padding: 8px 20px;
+        border-radius: 4px;
+        background: none;
+    }
+
+    .active-button{
+        color: #fff;
+        background: rgb(101,84,229);
+    }
+
+    .primary-button:hover{
+        color: #000;
+        background: #fff;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .secondary-button:hover{
+        background: rgb(101,84,229);
+        transition: all 0.5s ease-in-out;
+        color: #fff;
+    }
+
+    /* End buttons */
+
+/* End banner */
+
+/* start about */
+
+    .about{
+        padding: 8rem 5rem;
+    }
+
+    .about-title h2 span{
+        display: block;
+        letter-spacing: 21px;
+    }
+
+    .paragraph p {
+        padding: .4rem 0;
+    }
+
+    .para{
+        color: #808080;
+    }
+
+/* end about */
+
+/* start Brand */
+
+    .brand{
+        padding: 1rem 20rem;
+        margin-bottom: 4rem;
+    }
+
+    .first-row.col-lg-4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .brand-container{
+        border: 1px solid #808080;
+        text-align: center;
+        padding: 1.8rem 0rem;
+        margin: .9rem 0;
+        width: 180px;
+        height: 100px;
+        cursor: pointer;
+        transition: transform .4s ease;
+    }
+
+    .brand-container:hover{
+        filter: brightness(0.15);
+    }
+
+    .brand-container:hover{
+        box-shadow: 0 0 10px;
+        transform: scale(1.1);
+    }
+
+    .experience{
+        padding-left: 1rem;
+    }
+    
+    .experience span{
+        display: block;
+    }
+
+    .years-container{
+        background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+        width: 40rem;
+        height: 18rem;
+        padding-left: 8rem;
+        position: relative;
+    }
+
+    .experience .bg-panel{
+        position: absolute;
+        background: #e029290a;
+        width: 400px;
+        height: 400px;
+        z-index: -1;
+        top: 1%;
+    }
+
+    .years{
+        top: 10%;
+        font-weight: 500;
+        font-size: 80px;
+        z-index: 2;
+        color: rgb(101,84,229);
+        padding-left: 30px!important;
+    }
+
+    .span-h2{
+        padding: 2rem 0;
+    }
+
+    .years-container h2 span{
+        font-weight: 750;
+        font-size: 30px;
+    }
+
+    .call{
+        padding-left: 10rem;
+    }
+
+    .telephone{
+        text-decoration: none;
+    }
+
+/* end Brand */
+
+/* start services */
+
+    .services{
+        padding: 7rem 2rem;
+    }
+
+    .services-title{
+        padding: 0 14rem;
+    }
+
+    .services-title h1{
+        font-size: 35px;
+    }
+
+    .services-container{
+        background: rgba(248, 252, 253, 0.973);
+        padding: 2rem 0;
+        width: 16rem;
+        margin: 5rem .5rem;
+        transition: box-shadow .3s ease-in-out;
+    }
+
+    .services-container:hover{
+        box-shadow: 0 2px 5px;
+    }
+
+/* end services */
+
+/* start Project */
+
+    .project{
+        padding: 4rem 0;
+    }
+
+    .project .button-group button{
+        background: transparent; 
+        border: none;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    } 
+
+    .project .button-group button + button{
+        padding-left: 3rem;
+    }
+
+    .title h4{
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .img a:hover img {
+        filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+    }
+    
+/* end Project */
+
+
+/* start about */
+
+    
+
+    .client{
+        background: #ffffff10;
+        box-shadow: 0 0 3px 0 black;
+        margin: 3rem 0rem;
+    }
+
+    .client-img{
+        padding: 2rem;
+        max-height: 100%;
+    }
+
+    .about-client{
+        padding: 2rem;
+    }
+
+    .owl-carousel .owl-item img {
+        height: 100%;
+    }
+
+    .about-client h4{
+        font-weight: 500;
+        font-size: 21px;
+        color: black;
+    }
+
+    .about-client p{
+        font-size: 14px;
+    }
+
+    .owl-item{
+        display: flex;
+        justify-content: center;
+        padding: 0 1.5rem;
+    }
+
+    .owl-dot.active span{
+        background: rgb(101,84,229)!important;
+    }
+
+/* end about */
+
+
+/* subscribe start */
+
+    .subscribe{
+        background: url(../img/foner.png) no-repeat;
+        padding: 10rem 0;
+        margin: 3rem auto;
+    }
+
+    .subscribe-title h4{
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .subscribe-title p{
+        color: #fff;
+        padding: 1rem 4rem;
+    }
+
+    .input-textbox{
+        padding: 1.5rem 1rem;
+    }
+
+    .form-control-1{
+        border: 1px solid #fff;
+        background: none;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        width: 400px;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .form-control-1::placeholder{
+        color: #fff;
+    }
+
+    .btn-submit button{
+        background: #fff;
+        color: #000;
+        padding: .7rem 2rem;
+        margin-top: 25px;
+    }
+
+/* subscribe end */
+
+/* start footer */
+
+    .footer{
+        padding: 5rem 0;
+        background: url(../img/footer-bg.png) no-repeat;
+    }
+
+    .social h5{
+        font-size: 23px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .social i{
+        font-size: 28px;
+        padding: 2rem;
+        color: #808080;
+    }
+
+    .social i:hover{
+        color: rgb(101,84,229);
+    }
+
+    .btn-footer{
+        text-decoration: none;
+    }
+
+/* end footer */
+
+/* @media */
+
+@media (max-width: 1700px){
+    .brand-container img{
+        max-width: 100%;
+    }
+    .brand-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1400px){
+    .nav-item{
+        padding-right: 0.5rem;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .about-title{
+        padding-left: 2%;
+    }
+    .out-project{
+        width: 100%;
+    }
+    .owl-img{
+        max-width: 100%;
+    }
+    .client-img{
+        padding: 1rem;
+    }
+    .services-container{
+        width: 13rem;
+    }
+    .first-row{
+        padding-left: 40px;
+    }
+    .brand-container{
+        width: 110%;
+    }
+
+}
+
+
+@media (max-width: 992px){
+    .services-container{
+        width: 18rem;
+    }
+    .about{
+        padding-top: 40rem;
+    }
+    .experience{
+        padding-left: 0;
+        margin-left: -100px;
+    }
+    .years-container{
+        padding-left: 0;
+    }
+    .span-h2{
+        margin-left: 10px;
+    }
+    .years{
+        margin-left: 100px;
+    }
+    .call{
+        padding-left: 2rem;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 340px) {
+    .navbar{
+        padding: 4%;
+        margin: 0%;
+    }
+    .site-title h1 {
+        font-size: 41px;
+    }
+    .input-text input{
+        width: 15rem;
+    }
+    .services{
+        width: 13rem;
+    }
+}
+
+@media (max-width: 792px) {
+    .about-title h2 span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+    .years{
+        padding-left: 1%;
+        width: 49%;
+    }
+    .bg-panel{
+        margin-left: 30%;
+        width: 80%;
+    }
+    .call{
+        padding-left: 3%;
+    }
+    .button-group button{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .about-title p {
+        padding: 0%;
+    }
+    .input-textbox input{
+        width: 20rem;
+        margin: 5%;
+    }
+}
+
+@media (max-width: 1910px){
+    .navbar{
+        padding: 1rem;
+    }
+    .container{
+        max-width: 90%;
+    }
+    .brand-container, .services-title, .about{
+        padding: 3% 4%;
+    }
+
+} */
+
+
